@@ -1,7 +1,7 @@
 import React from 'react';
-import './Shopping.css';
 import {Link} from 'react-router-dom';
 import { useProducts } from '../../context/ShopContext';
+import './Shopping.css';
 
 function Product({data}) {  
   const {id,productName,price,productImage,description} = data;

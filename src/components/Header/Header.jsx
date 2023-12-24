@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import './Header.css'
 import { BiUser } from 'react-icons/bi'
 import { AiOutlineShoppingCart } from 'react-icons/ai'
 import { Link } from 'react-router-dom';
 import { useProducts } from '../../context/ShopContext';
 import DropDown from '../DropDownMenu/DropDown';
 import { BsList } from "react-icons/bs";
+import './Header.css'
 
 function Navbar() {
   const { getTotalItems } = useProducts();
@@ -35,7 +35,6 @@ function Navbar() {
         <li><Link to='/cart'><AiOutlineShoppingCart className='icon' /></Link></li><span className='totalCount'>{handleTotalCount()}</span>
       </ul>}
       {isSmallScreen && <BsList className='vertical-nav-icon' onClick={function(){
-        // we need show the list or hide
         setVerticalDownState((prev)=>{
           return !prev;
         });

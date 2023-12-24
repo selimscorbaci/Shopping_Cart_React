@@ -25,13 +25,10 @@ function ShopContextProvider({children}) {
   }
 
   const addToCart = (item) => {
-    //we need to add items and keep added items
       setCartItems(prevItems=>{
         if (prevItems !== null && prevItems.find((prevItem) => prevItem.id === item.id)) {
-          // If the item is already in the array, return the array as is
            return [...prevItems];
             } else {
-          // If the item is not in the array, add it
           return (prevItems === null) ? [item] : [...prevItems, item];
         } 
       })
@@ -40,17 +37,15 @@ function ShopContextProvider({children}) {
         {
           ...countItems,
           [item.id]:{
-            count: countItems[item.id] !== undefined ? countItems[item.id].count + 1 : 1// take existing value and increase it  
+            count: countItems[item.id] !== undefined ? countItems[item.id].count + 1 : 1  
           }
         }
       )  
   }
   
   const removeFromCart = (item) => {
-    //if there is no item we wont show removeFromCart button
     if(countItems[item.id] !== undefined){
-      if(countItems[item.id].count === 1){
-        // if count ıtems item.id === 1 ? 
+      if(countItems[item.id].count === 1){ 
          setCountItems(prevCountItems => {
           const newCountItems = {...prevCountItems}; 
           delete newCountItems[item.id]; 
