@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Gabarito&family=Inter&family=Montserrat:wght@200;300&family=Poppins:wght@300&family=Roboto:wght@300&family=Young+Serif&display=swap');
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:white;
+    position: fixed;
+    padding: 10px 20px;
+    top: 0;
+    z-index: 2;
+    border-bottom: 0.5px solid rgb(187, 184, 184);
+}
+
+.logo{
+    margin-left: 70px;
+    font-family: 'Gabarito', sans-serif;
+    font-size: 23px;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar .navItems{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    column-gap: 20px;
+    text-align: center;
+    margin-right: 70px;
+    position: relative;
+}
+
+.navbar .navItems li{
+    border-radius: 50%;
+    padding: 5px;
+    transition: all ease 0.5s;
+    list-style: none;
+}
+
+.navbar .navItems li:hover{
+    background:  rgb(39, 183, 202);
+}
+
+.navbar .navItems li .icon{
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    align-items: center;
+}
+
+.navbar .navItems .totalCount{
+    position: absolute;
+    right: 2px;
+    top: 3px;
+    user-select: none;
+    color: color;
+    font-weight: 500px;
+}
+
+.vertical-nav-icon{
+    cursor: pointer;
+    transition: 0.5s ease-out;
+}
+
+.vertical-nav-icon:hover{
+    color: rgb(39, 183, 202);
+}
+
+.vertical-list{
+    position: absolute;    
+    list-style: none;
+    background:white;
+    width: 100%;
+    top:48px;
+    border-bottom-right-radius: 40%;
+    border-bottom-left-radius: 25%;
+    border-bottom: 3px solid rgb(39, 183, 202);
+}
+
+.vertical-list li{
+    cursor: pointer;
+    margin-bottom: 2px;
+    width: fit-content;
+    margin: 20px 30px 20px 72px;
+}
+
+.vertical-list li a{
+    text-decoration: none;
+    color: black;
+}
+
+.vertical-list li:nth-child(3) a{
+    color: rgb(39, 183, 202);
+}
+
+.vertical-list li a:hover{
+    font-weight: bolder;
+}

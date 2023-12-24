@@ -1,0 +1,107 @@
+.cart{
+    background: rgb(226, 221, 221);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 200px;
+}
+
+.cart table{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.cart tbody img{
+    max-width: 200px;
+    height: auto;
+    text-align: center;
+}
+
+.cart table tbody .item{
+    justify-content: left;
+    align-items: self-start;
+    text-align: center;
+}
+
+.cart .item span{
+    display: block;
+    text-align: center; 
+}
+
+.cart .editItem input{
+    width: 40px;
+    padding: 10px;    
+    text-align: center;
+    border: none;
+    border-radius: 2.5px;
+}
+
+.cart button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s ease;
+    user-select: none;
+}
+
+.cart button:hover {
+    background: rgb(39, 183, 202);
+    color: white;
+}
+
+.completeShopping{
+    text-align: right;
+}
+
+.completeShopping span{
+    display: block;
+}
+
+.emptyCard{
+    color: rgb(39, 183, 202);
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* 920 */
+
+@media only screen and (581px < width < 920px) {
+    .cart{
+        margin: 200px 20px;
+    }
+}
+
+/* 581 */
+
+@media only screen and (width < 581px) {
+    .cart{
+        margin: 80px 20px ;
+        width: auto;
+    }
+    .cart tbody img{
+        max-width: 150px;
+    }
+
+    .cart .editItem input{
+        width: 30px;
+        padding: 5px;
+    }
+
+    .cart .editItem button{
+        padding: 5px 10px;
+    }
+}

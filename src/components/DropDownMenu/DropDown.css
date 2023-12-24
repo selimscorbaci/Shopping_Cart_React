@@ -1,0 +1,38 @@
+.dropDown{
+    position: absolute;
+    top: 3.199rem;
+    right: 8rem;
+    width: 80px;
+    padding: 11px;
+    border-radius: 11px;
+    background-color: white;
+    border: 1px solid gray;
+}
+
+.menu{
+    border-radius: 5px;
+    list-style-type: none;
+}
+
+.menu li{
+    cursor: pointer;
+    user-select: none;
+    display: block;
+    color: black;
+    text-align: center;
+}
+.menu li a{
+    text-decoration: none;
+    color: black;
+    transition: 0.5s ease-out;
+}
+.menu li a:hover{
+    color: rgb(39, 183, 202);;
+}   
+
+.menu hr{
+    width: 90%;
+    color: gray;
+    opacity: 0.5;
+    margin: 5px auto 0px auto;
+}

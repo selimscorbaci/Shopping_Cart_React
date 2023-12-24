@@ -1,0 +1,146 @@
+.container{
+    background: linear-gradient(45deg, rgb(5, 105, 118), rgb(225, 225, 225));
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.logoLogin{
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 15px 90px;
+    font-family: 'Gabarito', sans-serif;
+    font-size: 23px;
+    text-decoration: none;
+    color: black;
+}
+
+.container h1{
+    margin-left: 60px;
+    text-align: center;
+    animation: 1s ease-in slideLeft;
+}
+
+.loginForm{
+    margin: 0 auto;
+    background: transparent;
+    max-width: 700px;
+    border: 1px solid rgb(13, 92, 102);
+    padding: 20px;
+    border-radius: 20px;
+    height: 400px;
+    box-shadow: 5px 5px black;
+    width: 30%;
+    animation: 1.2s ease-out slideBottom;
+}
+.loginForm h2{
+    text-align: center;
+}
+.loginForm input{
+    display: block;
+    padding: 10px;
+    /* width: 700px; */
+    width: 100%;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+}
+
+.loginForm input:hover{
+    outline: rgb(39, 183, 202) solid 2px;
+}
+
+.loginForm label{
+    text-align: left;
+    color: black;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.loginForm button{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    background: #f1f0f1;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    transition: 0.5s ease;
+    cursor: pointer;
+    user-select: none;
+    margin-bottom: 20px;
+}
+
+.loginForm button:hover{
+    color: white;
+    background: rgb(39, 183, 202);
+}
+
+.loginForm span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.loginForm a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 26px;
+    color:rgb(13, 92, 102);
+    transition: 0.7s ease-in-out;
+}
+
+.loginForm a:hover{
+    color: rgb(16, 163, 183);
+}
+
+
+@media only screen and (width < 960px) {
+    .container{
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-start;  
+    } 
+    .container h1{
+        margin-top: 150px;
+        margin-left: 0px;
+        margin-bottom: 30px;
+    }
+    .loginForm{
+        width: 60%;
+    }
+}
+
+
+
+@keyframes slideBottom {
+    from{
+        opacity: 0;
+        transform: translateY(300px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes slideLeft {
+    from{
+        opacity: 0;
+        transform: translateX(-300px);
+    }
+    to{
+        opacity: 1;        
+        transform: translateX(0px);
+    }
+}
