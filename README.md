@@ -1,5 +1,5 @@
 ## Shopping Cart App Developed with React and Context Api
-
+### Screen Shots
 ![localhost-screenshot](https://github.com/selimscorbaci/Shopping_Cart_React/assets/123262965/bdc51015-7335-4253-8553-465f07a41d49)
 
 ![localhost-screenshot (1)](https://github.com/selimscorbaci/Shopping_Cart_React/assets/123262965/458a3122-1598-4dd7-a84b-0229bbd7352d)
